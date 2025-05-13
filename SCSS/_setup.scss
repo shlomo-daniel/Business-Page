@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+}
+
+@font-face {
+  font-family: "Castoro";
+  src: url(../public/fonts/Castoro-Regular.ttf);
+}
+
+$header-font: "Castoro", Sans-serif;
+$body-font: "Castoro", Sans-serif;
+$body-font-color: white;

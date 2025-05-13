@@ -1,0 +1,138 @@
+.heading-section {
+  background-image: url("../../images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading-section-image {
+    width: 100%;
+    min-height: 200px;
+
+    background-image: url(../../images/buildings.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .profile-wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -3rem;
+
+    .profile-image {
+      width: 35%;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 2px #eef4ff;
+    }
+  }
+
+  .header-wrapper {
+    text-align: center;
+    direction: rtl;
+    padding: 2rem 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h1,
+    h2 {
+      color: white;
+      font-family: $header-font;
+    }
+  }
+
+  // swap flex with responsive grid
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-bottom: 3rem;
+
+    .buttons-with-text {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+      font-family: "Castoro", Sans-serif;
+      font-size: 1.5rem;
+      color: white;
+
+      transition: color 0.1s ease-in-out;
+
+      &:hover {
+        color: #b7a769;
+      }
+
+      .buttons-frame {
+        min-width: 100px;
+        min-height: 100px;
+        height: auto;
+        border-radius: 50%;
+        border: solid 3px #b7a769;
+        margin: 1rem 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #b7a769;
+          text-decoration: none;
+
+          svg {
+            width: 50px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .bold-action-button {
+    width: 55%;
+    height: 55px;
+    margin-bottom: 2rem;
+
+    font-family: "Castoro", Sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    border-radius: 20px;
+
+    background-color: #b7a769;
+
+    border: solid #b7a769;
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0px 0px 0px 0px #b7a769;
+      }
+      25% {
+        box-shadow: 0px 0px 5px 0px #b7a769;
+      }
+      50% {
+        box-shadow: 0px 0px 17px 0px #b7a769;
+      }
+      75% {
+        box-shadow: 0px 0px 5px 0px #b7a769;
+      }
+      0% {
+        box-shadow: 0px 0px 0px 0px #b7a769;
+      }
+    }
+
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
