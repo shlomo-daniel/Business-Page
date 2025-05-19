@@ -41,8 +41,8 @@
 
     h1,
     h2 {
-      color: white;
-      font-family: $header-font;
+      color: $headers-color;
+      font-family: $headers-font;
     }
   }
 
@@ -60,7 +60,7 @@
       flex-direction: column;
 
       text-align: center;
-      font-family: "Castoro", Sans-serif;
+      font-family: $body-font;
       font-size: 1.5rem;
       color: white;
 
@@ -100,7 +100,7 @@
     height: 55px;
     margin-bottom: 2rem;
 
-    font-family: "Castoro", Sans-serif;
+    font-family: $body-font;
     font-weight: bold;
     font-size: 1.5rem;
 

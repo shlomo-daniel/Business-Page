@@ -12,6 +12,10 @@ body {
   font-family: "Castoro";
   src: url(../public/fonts/Castoro-Regular.ttf);
 }
+@font-face {
+  font-family: "Assistant";
+  src: url(../public/fonts/Assistant-VariableFont_wght.ttf);
+}
 .heading-section {
   background-image: url("../../images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
   background-repeat: no-repeat;
@@ -61,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: "Castoro", Sans-serif;
+  font-family: "Assistant", Sans-serif;
   font-size: 1.5rem;
   color: white;
   transition: color 0.1s ease-in-out;
@@ -92,7 +96,7 @@ body {
   width: 55%;
   height: 55px;
   margin-bottom: 2rem;
-  font-family: "Castoro", Sans-serif;
+  font-family: "Assistant", Sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   border-radius: 20px;
@@ -120,4 +124,140 @@ body {
 .heading-section a {
   text-decoration: none;
   color: white;
+}
+
+.about-section {
+  background: url("../../images/diagnal-background.jpg");
+}
+.about-section .about-text-wrapper {
+  padding: 0 2.2rem;
+  padding-bottom: 2rem;
+}
+.about-section .about-text-wrapper h3 {
+  font-family: "Castoro", Sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+  padding: 2rem;
+}
+.about-section .about-text-wrapper p {
+  font-family: "Assistant", Sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.about-section .about-text-wrapper p:nth-child(-n+3) {
+  margin-bottom: 1rem;
+}
+.about-section .about-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.about-section .about-content-wrapper iframe {
+  width: 70%;
+  height: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+.about-section .info-accordions {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  color: white;
+}
+.about-section .info-accordions .accordion {
+  width: 500px;
+  margin: 1.2rem auto;
+  padding: 1rem;
+  color: #b7a769;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 2px #b7a769;
+}
+.about-section .info-accordions .accordion input {
+  display: none;
+}
+.about-section .info-accordions .accordion label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-family: "Assistant", Sans-serif;
+  font-size: 1.3rem;
+}
+.about-section .info-accordions .accordion label::after {
+  position: absolute;
+  left: 10px;
+  content: " +";
+  font-weight: bold;
+}
+.about-section .info-accordions .accordion-content-box {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  color: white;
+}
+.about-section .info-accordions .accordion-content-box .accordion-content {
+  padding: 1rem;
+  font-family: "Assistant", Sans-serif;
+}
+.about-section .info-accordions .accordion-content-box .accordion-content .marker-dot {
+  list-style-position: inside;
+  list-style-type: none;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+.about-section .info-accordions .accordion-content-box .accordion-content .marker-dot .marker-circle {
+  list-style-type: circle;
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+.about-section .info-accordions input:checked ~ .accordion-content-box {
+  max-height: 800px;
+}
+.about-section .info-accordions input:checked ~ label::after {
+  content: "-";
+}
+.about-section .emphasized-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Assistant", Sans-serif;
+  color: white;
+}
+.about-section .emphasized-feature .emphasized-heading {
+  text-align: center;
+}
+.about-section .emphasized-feature .emphasized-heading p {
+  font-size: 1.5rem;
+}
+.about-section .emphasized-feature .emphasized-heading p span {
+  font-size: 3rem;
+  color: #b7a769;
+}
+.about-section .emphasized-icon {
+  display: flex;
+  justify-content: center;
+}
+.about-section .emphasized-text {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+@keyframes text-animation {
+  0% {
+    color: white;
+  }
+  25% {
+    color: rgb(109, 109, 109);
+  }
+  50% {
+    color: #e7dbab;
+  }
+  75% {
+    color: #d1c38a;
+  }
+  100% {
+    color: #b7a769;
+  }
+}
+.about-section .emphasized-text span {
+  animation: text-animation 2s ease-in-out infinite;
 }/*# sourceMappingURL=main.css.map */
