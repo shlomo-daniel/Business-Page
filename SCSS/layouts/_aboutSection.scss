@@ -135,25 +135,23 @@
     text-align: center;
     padding: 2rem;
 
-    @keyframes text-animation {
+    @keyframes text-transform {
       0% {
-        color: white;
-      }
-      25% {
-        color: rgb(109, 109, 109);
-      }
-      50% {
-        color: #e7dbab;
-      }
-      75% {
-        color: #d1c38a;
+        transform: scale(1);
       }
       100% {
-        color: #b7a769;
+        transform: scale(1.25);
+      }
+      0% {
+        transform: scale(1);
       }
     }
     span {
-      animation: text-animation 2s ease-in-out infinite;
+      color: #b7a769;
+      display: block;
+      max-width: fit-content;
+      justify-self: center;
+      animation: text-transform 1s alternate infinite;
     }
   }
 }
