@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Business Card</title>
     <link rel="stylesheet" href="SCSS/main.css">
+    <script type="module" src="./script.js" defer></script>
     <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
 </head>
 
 <body>
-    <!-- heading section -->
+
     <section class="heading-section">
 
-        <!-- header image -->
         <div class="heading-section-image">
         </div>
 
-        <!-- headings background -->
+
         <div class="heading-background">
             <div class="profile-wrapper">
-                <img class="profile-image" src="./images/adi-profile.jpg" alt="profile image">
+                <img class="profile-image" src="./public/gallery/adi-profile.jpg" alt="profile image">
             </div>
 
             <div class="header-wrapper">
@@ -214,6 +214,7 @@
                     שנות נסיון
                 </p>
             </div>
+
             <div class="emphasized-icon">
                 <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="hover"
                     style="width:250px;height:250px"></lord-icon>
@@ -238,19 +239,31 @@
                 <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
             </div>
             <div class="gallery-item">
-                <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
+                <img src="./public/gallery/adi-profile.jpg" alt="">
             </div>
             <div class="gallery-item">
                 <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
             </div>
             <div class="gallery-item">
-                <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
+                <img src="./public/gallery/adi-profile.jpg" alt="">
             </div>
             <div class="gallery-item">
                 <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
             </div>
             <div class="gallery-item">
-                <img src="./public/gallery/1747694473226-30c8e917-c769-40d5-aacf-c09896e77f49_1.jpg" alt="">
+                <img src="./public/gallery/adi-profile.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- gallery modal -->
+        <div class="modal" id="modalWrapper">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div class="modal-nav">
+                <button id="nextButton">&lsaquo;</button>
+                <button id="prevButton">
+                    &rsaquo;
+                </button>
             </div>
         </div>
     </section>

@@ -325,4 +325,64 @@ body {
   width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.gallery-section .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.459);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+.gallery-section .modal.show {
+  display: flex;
+  opacity: 1;
+}
+.gallery-section .modal .modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  opacity: 1;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+.gallery-section .modal .modal.show .modal-content {
+  opacity: 1;
+  transform: scale(1);
+}
+.gallery-section .modal .close-modal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.gallery-section .modal .close-modal:hover {
+  color: black;
+}
+.gallery-section .modal .modal-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-section .modal .modal-nav button {
+  border: none;
+  font-size: 3rem;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+.gallery-section .modal .modal-nav button:hover {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
