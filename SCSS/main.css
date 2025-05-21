@@ -162,11 +162,12 @@ body {
 }
 .about-section .info-accordions {
   margin: 0 auto;
+  padding: 0 2rem;
   padding-bottom: 3rem;
   color: white;
 }
 .about-section .info-accordions .accordion {
-  width: 500px;
+  max-width: 500px;
   margin: 1.2rem auto;
   padding: 1rem;
   color: #b7a769;
