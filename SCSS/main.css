@@ -17,7 +17,7 @@ body {
   src: url(../public/fonts/Assistant-VariableFont_wght.ttf);
 }
 .heading-section {
-  background-image: url("../../public/backgrounds/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+  background-image: url("../public/backgrounds/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -27,7 +27,7 @@ body {
 .heading-section .heading-section-image {
   width: 100%;
   min-height: 200px;
-  background-image: url(../../images/buildings.jpg);
+  background-image: url(../images/buildings.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@ body {
 }
 
 .about-section {
-  background: url("../../images/diagnal-background.jpg");
+  background: url("../images/diagnal-background.jpg");
 }
 .about-section .about-text-wrapper {
   padding: 0 2.2rem;
@@ -262,7 +262,7 @@ body {
 }
 
 .gallery-section {
-  background-image: url(../../public/backgrounds/white-background.jpg);
+  background-image: url(../public/backgrounds/white-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
