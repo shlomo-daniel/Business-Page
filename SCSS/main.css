@@ -295,31 +295,23 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 1px 1px 2px 1px gray;
+  cursor: pointer;
 }
 @keyframes gallery-effect {
   0% {
-    opacity: 0;
+    opacity: 0.8;
+    transform: scale(1);
   }
-  25% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.5;
+  50% {
+    opacity: 0.85;
   }
   100% {
     opacity: 1;
+    transform: scale(1.01) translateY(-2%);
   }
 }
-.gallery-section .gallery-wrapper .gallery-item.gallery-item:hover::before {
-  content: "";
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: rgba(128, 128, 128, 0.274);
-  cursor: pointer;
-  animation: gallery-effect 150ms ease-in normal;
+.gallery-section .gallery-wrapper .gallery-item.gallery-item:hover {
+  animation: gallery-effect 500ms ease forwards;
 }
 .gallery-section .gallery-wrapper .gallery-item img {
   width: 250px;
