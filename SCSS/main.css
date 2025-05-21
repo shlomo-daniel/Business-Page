@@ -17,7 +17,7 @@ body {
   src: url(../public/fonts/Assistant-VariableFont_wght.ttf);
 }
 .heading-section {
-  background-image: url("../../images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+  background-image: url("../../public/backgrounds/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
