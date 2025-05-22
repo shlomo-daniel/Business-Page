@@ -377,4 +377,52 @@ body {
 }
 .gallery-section .modal .modal-nav button:hover {
   color: black;
+}
+
+.bottom-section {
+  background-image: url(../public/backgrounds/diagnal-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom-section .reviews-container .reviews-heading {
+  text-align: center;
+  padding: 3rem 0;
+}
+.bottom-section .reviews-container .reviews-heading h3 {
+  font-family: "Castoro", Sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.bottom-section .reviews-container .reviews-heading hr {
+  border: 1px solid #b7a769;
+  justify-self: center;
+  width: 35%;
+}
+.bottom-section .reviews-container .reviews-slidshow {
+  position: relative;
+  font-family: "Assistant", Sans-serif;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+.bottom-section .reviews-container .reviews-slidshow .slides p:first-child {
+  font-size: 1.5rem;
+}
+.bottom-section .reviews-container .reviews-slidshow .slides p:last-child {
+  color: #b7a769;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.bottom-section .reviews-container .reviews-slidshow .slideshow-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-section .reviews-container .reviews-slidshow .slideshow-nav button {
+  font-size: 3rem;
+  border: none;
+  background: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
