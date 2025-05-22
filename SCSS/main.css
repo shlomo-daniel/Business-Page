@@ -4,8 +4,16 @@
   padding: 0;
 }
 
-body {
+* p,
+h1,
+h2,
+h3,
+h4,
+h5 {
   direction: rtl;
+}
+
+body {
   max-width: 900px;
   margin: 0 auto;
 }
