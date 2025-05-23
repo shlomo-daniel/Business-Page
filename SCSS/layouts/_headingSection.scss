@@ -97,7 +97,7 @@
 
   .bold-action-button {
     width: 55%;
-    height: 55px;
+    height: clamp(fit-content, 60px, 60px);
     margin-bottom: 2rem;
 
     font-family: $body-font;
