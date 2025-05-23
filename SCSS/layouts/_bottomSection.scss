@@ -2,7 +2,6 @@
   background-image: url(../public/backgrounds/diagnal-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   .reviews-container {
     padding-bottom: 3rem;
     .reviews-heading {
@@ -22,7 +21,7 @@
 
     .reviews-slidshow {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: flex-start;
       font-family: $body-font;
       color: white;
@@ -30,17 +29,18 @@
 
       .slides.active-slide {
         display: block;
+        min-height: 110px;
       }
 
       .slides {
         display: none;
 
         p:first-child {
-          font-size: 1.3rem;
+          font-size: clamp(1.1rem, 4vw, 1.5rem);
         }
         p:last-child {
           color: $main-color;
-          font-size: 1.3rem;
+          font-size: clamp(1.1rem, 4vw, 1.5rem);
           padding: 1rem 0;
         }
       }

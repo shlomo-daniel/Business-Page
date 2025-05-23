@@ -415,7 +415,7 @@ body {
 }
 .bottom-section .reviews-container .reviews-slidshow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   font-family: "Assistant", Sans-serif;
   color: white;
@@ -423,16 +423,17 @@ body {
 }
 .bottom-section .reviews-container .reviews-slidshow .slides.active-slide {
   display: block;
+  min-height: 110px;
 }
 .bottom-section .reviews-container .reviews-slidshow .slides {
   display: none;
 }
 .bottom-section .reviews-container .reviews-slidshow .slides p:first-child {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
 }
 .bottom-section .reviews-container .reviews-slidshow .slides p:last-child {
   color: #b7a769;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
   padding: 1rem 0;
 }
 .bottom-section .reviews-container .reviews-slidshow button {
