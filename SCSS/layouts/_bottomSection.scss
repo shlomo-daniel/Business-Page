@@ -78,20 +78,21 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
-    .action-buttons-heading {
-      text-align: center;
-      padding: 3rem 0;
-      h3 {
-        font-family: $headers-font;
-        font-size: 2rem;
-        color: white;
-      }
-      hr {
-        border: 1px solid $main-color;
-        justify-self: center;
-        width: 35%;
-      }
-    }
+
+    // .action-buttons-heading {
+    //   text-align: center;
+    //   padding: 3rem 0;
+    //   h3 {
+    //     font-family: $headers-font;
+    //     font-size: 2rem;
+    //     color: white;
+    //   }
+    //   hr {
+    //     border: 1px solid $main-color;
+    //     justify-self: center;
+    //     width: 35%;
+    //   }
+    // }
 
     .main-button-wrapper {
       .bold-action-button {
@@ -188,6 +189,64 @@
             color: white;
           }
         }
+      }
+    }
+  }
+  .contact-form-container {
+    color: white;
+
+    .contact-heading-wrapper {
+      text-align: center;
+      padding: 3rem 0;
+      h3 {
+        font-family: $headers-font;
+        font-size: 2rem;
+        color: white;
+      }
+      hr {
+        border: 1px solid $main-color;
+        justify-self: center;
+        width: 35%;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        width: 55%;
+        height: 60px;
+        padding: 10px;
+        border: 2px solid $main-color;
+        border-radius: 10px;
+
+        font-size: 1.2rem;
+        font-family: $body-font;
+        color: #ffffff;
+        text-align: right;
+        background-color: transparent;
+      }
+    }
+    button {
+      width: 55%;
+      height: 60px;
+      margin-bottom: 2rem;
+
+      color: white;
+      font-family: $body-font;
+      font-size: 1.4rem;
+      background-color: $main-color;
+      border: none;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        border: solid 2px #b7a769;
+        color: $main-color;
+        font-size: 1.5rem;
+        background-color: transparent;
       }
     }
   }

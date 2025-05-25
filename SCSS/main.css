@@ -466,20 +466,6 @@ body {
   justify-content: center;
   flex-wrap: nowrap;
 }
-.bottom-section .action-buttons-container .action-buttons-heading {
-  text-align: center;
-  padding: 3rem 0;
-}
-.bottom-section .action-buttons-container .action-buttons-heading h3 {
-  font-family: "Castoro", Sans-serif;
-  font-size: 2rem;
-  color: white;
-}
-.bottom-section .action-buttons-container .action-buttons-heading hr {
-  border: 1px solid #b7a769;
-  justify-self: center;
-  width: 35%;
-}
 .bottom-section .action-buttons-container .main-button-wrapper .bold-action-button {
   display: block;
   width: 55%;
@@ -559,4 +545,58 @@ body {
 .bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#waze svg:hover {
   transform: scale(1.1);
   color: white;
+}
+.bottom-section .contact-form-container {
+  color: white;
+}
+.bottom-section .contact-form-container .contact-heading-wrapper {
+  text-align: center;
+  padding: 3rem 0;
+}
+.bottom-section .contact-form-container .contact-heading-wrapper h3 {
+  font-family: "Castoro", Sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.bottom-section .contact-form-container .contact-heading-wrapper hr {
+  border: 1px solid #b7a769;
+  justify-self: center;
+  width: 35%;
+}
+.bottom-section .contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.bottom-section .contact-form-container form input {
+  width: 55%;
+  height: 60px;
+  padding: 10px;
+  border: 2px solid #b7a769;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Assistant", Sans-serif;
+  color: #ffffff;
+  text-align: right;
+  background-color: transparent;
+}
+.bottom-section .contact-form-container button {
+  width: 55%;
+  height: 60px;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: "Assistant", Sans-serif;
+  font-size: 1.4rem;
+  background-color: #b7a769;
+  border: none;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.bottom-section .contact-form-container button:hover {
+  border: solid 2px #b7a769;
+  color: #b7a769;
+  font-size: 1.5rem;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
