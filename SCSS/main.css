@@ -40,7 +40,7 @@ body {
 .heading-section .heading-section-image {
   width: 100%;
   min-height: 200px;
-  background-image: url(../public/backgrounds/buildings.jpg);
+  background-image: url(../public/backgrounds/buildings.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,15 +107,14 @@ body {
 }
 .heading-section .bold-action-button {
   width: 55%;
-  height: clamp(-moz-fit-content, 60px, 60px);
-  height: clamp(fit-content, 60px, 60px);
+  height: clamp(100px, 60%, 60px);
   margin-bottom: 2rem;
   font-family: "Assistant", Sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   border-radius: 20px;
-  background-color: #b7a769;
   border: solid #b7a769;
+  background-color: #b7a769;
   animation: pulse 2s ease-in-out infinite;
 }
 @keyframes pulse {
@@ -440,8 +439,9 @@ body {
   font-size: 3rem;
   border: none;
   background: none;
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   color: white;
+  cursor: pointer;
 }
 .bottom-section .reviews-container .slide-dots {
   display: flex;
@@ -459,4 +459,104 @@ body {
   height: 10px;
   background-color: rgba(255, 255, 255, 0.452);
   border-radius: 50%;
+}
+.bottom-section .action-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.bottom-section .action-buttons-container .action-buttons-heading {
+  text-align: center;
+  padding: 3rem 0;
+}
+.bottom-section .action-buttons-container .action-buttons-heading h3 {
+  font-family: "Castoro", Sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.bottom-section .action-buttons-container .action-buttons-heading hr {
+  border: 1px solid #b7a769;
+  justify-self: center;
+  width: 35%;
+}
+.bottom-section .action-buttons-container .main-button-wrapper .bold-action-button {
+  display: block;
+  width: 55%;
+  height: clamp(100px, 60%, 60px);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: "Assistant", Sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: solid #b7a769;
+  background-color: #b7a769;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px #b7a769;
+  }
+  25% {
+    box-shadow: 0px 0px 5px 0px #b7a769;
+  }
+  50% {
+    box-shadow: 0px 0px 17px 0px #b7a769;
+  }
+  75% {
+    box-shadow: 0px 0px 5px 0px #b7a769;
+  }
+  0% {
+    box-shadow: 0px 0px 0px 0px #b7a769;
+  }
+}
+.bottom-section .action-buttons-container .main-button-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.bottom-section .action-buttons-container .buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  padding-bottom: 3rem;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Assistant", Sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  transition: text-shadow 0.1s ease-in-out;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text:hover {
+  text-shadow: #ffffff 1px 0px 12px;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a svg {
+  width: 70px;
+  height: auto;
+  transition: all 200ms ease-in-out;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#whatsapp {
+  color: #68ff54;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#whatsapp svg:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#phone {
+  color: #546eff;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#phone svg:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#waze {
+  color: #4af0fc;
+}
+.bottom-section .action-buttons-container .buttons-wrapper .buttons-with-text a#waze svg:hover {
+  transform: scale(1.1);
+  color: white;
 }/*# sourceMappingURL=main.css.map */

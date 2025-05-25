@@ -11,7 +11,7 @@
     width: 100%;
     min-height: 200px;
 
-    background-image: url(../public/backgrounds/buildings.jpg);
+    background-image: url(../public/backgrounds/buildings.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,6 @@
   }
 
   // swap flex with responsive grid
-
   .buttons-wrapper {
     display: flex;
     justify-content: center;
@@ -97,7 +96,7 @@
 
   .bold-action-button {
     width: 55%;
-    height: clamp(fit-content, 60px, 60px);
+    height: clamp(100px, 60%, 60px);
     margin-bottom: 2rem;
 
     font-family: $body-font;
@@ -105,10 +104,9 @@
     font-size: 1.5rem;
 
     border-radius: 20px;
+    border: solid #b7a769;
 
     background-color: #b7a769;
-
-    border: solid #b7a769;
 
     @keyframes pulse {
       0% {
